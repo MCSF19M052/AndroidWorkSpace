@@ -1,0 +1,4 @@
+#Wed Mar 17 15:15:42 PKT 2021
+base.0=E\:\\MCS\\androidprogress\\MyTestingApp\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
