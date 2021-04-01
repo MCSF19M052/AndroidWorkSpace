@@ -37,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
         friendList.add("Ibrahim");
         friendList.add("Imran");
         friendList.add("Raza");
-        friendList.add("Ahmed");
-        friendList.add("Naseem");
-        friendList.add("Ishaq");
-
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,friendList);
         listView.setAdapter(arrayAdapter);
 
@@ -52,9 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Friend Name", friendList.get(position));
                 startActivity(intent);
             }
-        });
-    }
-
+        }); }
     public void AddFriend(View view) {
         friendList.add(editText.getText().toString());
         arrayAdapter.notifyDataSetChanged();
