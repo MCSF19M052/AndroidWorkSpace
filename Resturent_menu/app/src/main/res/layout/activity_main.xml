@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.eshal.resturent_menu.MainActivity">
+
+    <LinearLayout
+
+         android:weightSum="3"
+      android:background="#33CCCC"
+        android:id="@+id/linear1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_weight="0.2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:background="#FF3300"
+               android:gravity="center"
+                android:textSize="30dp"
+               android:text="Food list"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/chiken"
+            android:text="Chiken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="200 Rs."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/handi"
+            android:text="Handi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text=" 100 Rs."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/nihari"
+            android:text="Nihari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text=" 120 Rs."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/biryani"
+            android:text="Biryani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="150 Rs."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:background="#993333"
+        android:textSize="25dp"
+        android:id="@+id/next"
+        android:text="next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+       android:weightSum="3"
+        android:id="@+id/linear2"
+        android:background="#FFCCFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#FF3300"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="Food list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+    android:layout_weight="0.3"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <CheckBox
+         android:layout_weight="1.7"
+         android:textSize="20dp"
+         android:id="@+id/tikka"
+         android:text="Chiken tikka pizza"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+         <TextView
+          android:layout_weight="0.3"
+          android:textSize="20dp"
+          android:text="800 Rs."
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+     android:weightSum="2"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+         <CheckBox
+         android:layout_weight="1.8"
+         android:textSize="20dp"
+         android:id="@+id/fries"
+         android:text="French fries"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+         <TextView
+         android:layout_weight="0.2"
+         android:textSize="20dp"
+         android:text="200 Rs."
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+     android:weightSum="2"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+         <CheckBox
+         android:layout_weight="1.6"
+         android:textSize="20dp"
+         android:id="@+id/tandoori"
+         android:text="Chiken tandoori pizza"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+         <TextView
+         android:layout_weight="0.4"
+         android:textSize="20dp"
+         android:text="750 Rs."
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    </LinearLayout>
+     <LinearLayout
+     android:weightSum="2"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_weight="1.8"
+            android:textSize="20dp"
+            android:id="@+id/chips"
+            android:text="Finger chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+             <TextView
+              android:layout_weight="0.2"
+              android:textSize="20dp"
+              android:text="150 Rs."
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+     </LinearLayout>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_weight="1.5"
+         android:weightSum="2"
+         android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+         <Button
+             android:layout_weight="1"
+             android:background="#996600"
+             android:id="@+id/back"
+             android:text="back"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+         <Button
+             android:layout_weight="1"
+         android:background="#66FF66"
+         android:id="@+id/done"
+         android:text="done"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+       android:visibility="gone"
+      android:weightSum="10"
+       android:background="#CCFFCC"
+        android:id="@+id/linear3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="#FF3300"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Ordered list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <LinearLayout
+             android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1.5"
+                android:textSize="20dp"
+                android:id="@+id/result2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+       </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#66CCFF"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="1"
+               android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2">
+               <TextView
+                   android:textColor="#000000"
+                   android:layout_weight="1.3"
+                   android:text="Total = "
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textSize="20dp"
+                    />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_weight="0.7"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/total"
+                   android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Discount 10% = " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dtotal"
+        android:layout_weight="1"
+        android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+</FrameLayout>
