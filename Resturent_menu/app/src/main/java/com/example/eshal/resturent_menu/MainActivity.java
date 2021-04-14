@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
        LinearLayout l1,l2,l3;
+      //Values to check which one is selected
        Boolean v1=false,v2=false,v3=false,v4=false,v5=false,v6=false,v7=false,v8=false;
        CheckBox chiken,handi,nihari,biryani,chips,tandoori,fries,tikka;
        TextView result1,result2,total,dtotal;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         total = (TextView) findViewById(R.id.total);
         dtotal = (TextView) findViewById(R.id.dtotal);
 
+     //ClickListner of buttons
         next.setOnClickListener(this);
         done.setOnClickListener(this);
         back.setOnClickListener(this);
