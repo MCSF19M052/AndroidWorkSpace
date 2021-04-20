@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String name=et1.getText().toString();
                 String password=et2.getText().toString();
+//Default password to check whether it is working or not
                 if(name.equals("shoaib") && password.equals("12345"))
                 {
                     l1.setVisibility(View.GONE);
